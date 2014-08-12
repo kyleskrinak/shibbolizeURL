@@ -1,31 +1,41 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shibbolize URL for Duke University</title>
 
-  <title>Kyle's Stuff</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/boostrap-theme.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Shibbolize this URL</h1>
+      <p>Drag this bookmarklet to your bookmark bar to shibbolize your URLs:</p>
 
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
+      <p><a href="javascript:!function(){var%20o,i;%22https:%22!==window.location.protocol%3Falert(%22This%20bookmarklet%20is%20for%20HTTPS%20only%22):(i=%22/%22===window.location.pathname%3F%22/%22+window.location.search.substring(3):window.location.pathname,o=window.location.origin+%22/Shibboleth.sso/Login%3Ftarget=%22+window.location.origin+%22/shib_login%22+i,window.prompt(%22Copy%20this%20Shibbolized%20URL%20to%20your%20clipboard%22,o))}();">Shibbolize Me</a>.</p>
 
-<body>
-  <h1>Shibbolize this URL</h1>
-  <p>Drag this bookmarklet to your bookmark bar to shibbolize your URLs:</p>
-  
-  <p><a href="javascript:!function(){var%20o,i;%22https:%22!==window.location.protocol%3Falert(%22This%20bookmarklet%20is%20for%20HTTPS%20only%22):(i=%22/%22===window.location.pathname%3F%22/%22+window.location.search.substring(3):window.location.pathname,o=window.location.origin+%22/Shibboleth.sso/Login%3Ftarget=%22+window.location.origin+%22/shib_login%22+i,window.prompt(%22Copy%20this%20Shibbolized%20URL%20to%20your%20clipboard%22,o))}();">Shibbolize Me</a>.</p>
-  
-  <p>Next, navigate to the page you wish to create a shibbolized URL and then click on the bookmarklet.</p>
-  
-  <p>Copy the URL from the prompt field.</p>
-  
-  <p>Hope this helps.</p>
-  
-</body>
+      <p>Next, navigate to the page you wish to create a shibbolized URL and then click on the bookmarklet.</p>
+
+      <p>Copy the URL from the prompt field.</p>
+
+      <p>Hope this helps.</p>
+    </div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
